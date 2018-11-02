@@ -11,26 +11,26 @@ public class TeamServiceImpl implements TeamService {
 
 	@Override
 	public String getAllTeamsheets() {
-		// TODO Auto-generated method stub
-		return null;
+		return repo.getAllTeamsheets();
 	}
 
 	@Override
 	public String addTeamsheet(String Team) {
-		// TODO Auto-generated method stub
-		return null;
+		return repo.addTeamsheet(Team);
 	}
 
 	@Override
 	public String deleteTeamsheet(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repo.deleteTeamsheet(id);
 	}
 
 	@Override
 	public String getTeamsheet(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repo.getTeamsheet(id);
+	}
+	
+	public void setRepo(TeamRepository repo) {
+		this.repo = repo;
 	}
 
 }
